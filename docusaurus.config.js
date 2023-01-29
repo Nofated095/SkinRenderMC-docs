@@ -6,13 +6,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Difficult Rocket',
-  tagline: 'dr docs',
-  url: 'https://dr.shenjack.top',
+  title: 'SkinRenderMC',
+  tagline: 'Render your Minecraft Skins and Capes in 3D view.',
+  url: 'https://sr.xiaojin233.cn',
   baseUrl: '/',
   onBrokenLinks: 'log',
   onBrokenMarkdownLinks: 'log',
-  favicon: 'https://img.9595095.xyz/mc',
+  favicon: 'https://littleskin.cn/favicon.png',
   staticDirectories: [],
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -44,10 +44,10 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Difficult Rocket',
+        title: 'SkinRenderMC',
         logo: {
-          alt: '095',
-          src: 'https://img.9595095.xyz/mc',
+          alt: 'mc',
+          src: 'https://littleskin.cn/favicon.png',
         },
         items: [
           {
