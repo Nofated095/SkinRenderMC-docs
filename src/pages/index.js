@@ -258,7 +258,7 @@ export default function Home() {
             </div>
           </section>
           <div className={styles.homeSubtitle}>
-            <p>Auth.js is an open source community project.</p>
+            <p>SkinRenderMC is an open source community project.</p>
           </div>
         </main>
       </div>
