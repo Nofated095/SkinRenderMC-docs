@@ -51,7 +51,7 @@ const config = {
         },
         items: [
           {
-            href: 'https://github.com/shenjackyuanjie/Difficult-Rocket',
+            href: 'https://github.com/jinzhijie/SkinRenderMC',
             label: 'GitHub',
             position: 'right',
           },
@@ -59,7 +59,7 @@ const config = {
       },
       footer: {
         style: 'dark',
-        copyright: `Copyright © ${new Date().getFullYear()} Shen Jack.`,
+        copyright: `Copyright © ${new Date().getFullYear()} jinzhijie.`,
       },
       prism: {
         theme: lightCodeTheme,
