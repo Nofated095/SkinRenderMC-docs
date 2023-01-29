@@ -206,12 +206,7 @@ export default function Home() {
                 </div>
                 <div className="col col--6">
                   <div className="code">
-                    <div className="code-heading">
-                      SvelteKit <span>/hooks.server.ts</span>
-                    </div>
-                    <CodeBlock className="prism-code language-js">
-                      {svelteKitCode}
-                    </CodeBlock>
+                    <img src="https://skinrendermc.9595095.xyz/assets/images/yushijinhun_both-a637b841102b85596974603032a76c1f.png" />
                   </div>
                 </div>
 {/*                 <div className="col col--6">
@@ -229,10 +224,10 @@ export default function Home() {
                 <div className="col">
                   <p className="text--center" style={{ marginTop: "2rem" }}>
                     <Link
-                      to="/getting-started/introduction"
+                      to="/docs/deploy"
                       className="button button--primary button--lg rounded-pill"
                     >
-                      Example Code
+                      Deploy
                     </Link>
                   </p>
                 </div>
@@ -240,53 +235,13 @@ export default function Home() {
             </div>
           </section>
           <div className={styles.homeSubtitle}>
-            <p>SkinRenderMC is an open source community project.</p>
+            <p>SkinRenderMC is an open source project.</p>
           </div>
         </main>
       </div>
     </Layout>
   )
 }
-
-const svelteKitCode = `
-import SvelteKitAuth from "@auth/sveltekit"
-import GitHub from '@auth/core/providers/github'
-import Facebook from '@auth/core/providers/facebook'
-import Google from '@auth/core/providers/google'
-
-import { 
-  GITHUB_ID,
-  GITHUB_SECRET,
-  FACEBOOK_ID,
-  FACEBOOK_SECRET,
-  GOOGLE_ID,
-  GOOGLE_SECRET
-} from "$env/static/private"
-
-export const handle = SvelteKitAuth({
-  providers: [
-    GitHub({ clientId: GITHUB_ID, clientSecret: GITHUB_SECRET }),
-    Facebook({ clientId: FACEBOOK_ID, clientSecret: FACEBOOK_SECRET }),
-    Google({ clientId: GOOGLE_ID, clientSecret: GOOGLE_SECRET })
-  ],
-})
-`.trim()
-
-const solidStartCode =
-  `import { SolidAuth, type SolidAuthConfig } from "@auth/solid-start";
-import GitHub from "@auth/core/providers/github";
-
-export const authOpts: SolidAuthConfig = {
-  providers: [
-    GitHub({
-      clientId: process.env.GITHUB_ID,
-      clientSecret: process.env.GITHUB_SECRET,
-    }),
-  ],
-  debug: false,
-};
-
-export const { GET, POST } = SolidAuth(authOpts);`.trim()
 
 const nextJsCode = `
 import NextAuth from 'next-auth'
