@@ -73,8 +73,8 @@ const kFormatter = (num) => {
   return Math.sign(num) * (Math.abs(num) / 1000).toFixed(1) + "k"
 }
 
-function Feature({ imageUrl, title, description }) {
-  const imgUrl = useBaseUrl(imageUrl)
+function Feature({ /* imageUrl,  */title, description }) {
+/*   const imgUrl = useBaseUrl(imageUrl) */
   return (
     <div className={classnames("col col--4", styles.feature)}>
       {imgUrl && (
