@@ -12,16 +12,16 @@ import styles from "./index.module.css"
 const features = [
   {
     title: "Easy",
-    imageUrl: "img/undraw_social.svg",
+    imageUrl: "https://littleskin.cn/favicon.png",
     description: (
       <ul>
         <li>
-          Built in support for 114514+ popular services
+          Run in <i>Docker</i>
           <br />
-          <em>(Google, Facebook, Auth0, Apple…)</em>
+          {/* <em>(Google, Facebook, Auth0, Apple…)</em> */}
         </li>
         <li>
-          Use with <i>any</i> OAuth 2 or OpenID Connect provider
+          Start with only <i>one file</i> and <i>one command</i>
         </li>
         <li>Built in email / passwordless / magic link</li>
         <li>
@@ -32,7 +32,7 @@ const features = [
   },
   {
     title: "Flexible",
-    imageUrl: "img/undraw_authentication.svg",
+    imageUrl: "https://littleskin.cn/favicon.png",
     description: (
       <ul>
         <li>
@@ -56,7 +56,7 @@ const features = [
   },
   {
     title: "Secure",
-    imageUrl: "img/undraw_secure.svg",
+    imageUrl: "https://littleskin.cn/favicon.png",
     description: (
       <ul>
         <li>Signed, prefixed, server-only cookies</li>
@@ -115,10 +115,10 @@ export default function Home() {
           <div className="container">
             <div className="hero-inner">
               <img
-                src="/img/logo/logo-sm.webp"
+                src="https://littleskin.cn/favicon.png"
                 alt="Shield with key icon"
                 className={styles.heroLogo}
-                height="142"
+                height="128"
                 width="128"
               />
               <div className={styles.heroText}>
@@ -131,34 +131,16 @@ export default function Home() {
                     "button button--outline button--secondary button--lg rounded-pill",
                     styles.button
                   )}
-                  href="https://next-auth-example.vercel.app"
+                  href="https://github.com/jinzhijie/SkinRenderMC"
                 >
-                  Live Demo (Next.js)
-                </a>
-                <a
-                  className={classnames(
-                    "button button--outline button--secondary button--lg rounded-pill",
-                    styles.button
-                  )}
-                  href="https://sveltekit-auth-example.vercel.app"
-                >
-                  Live Demo (SvelteKit)
-                </a>
-                <a
-                  className={classnames(
-                    "button button--outline button--secondary button--lg rounded-pill",
-                    styles.button
-                  )}
-                  href="https://auth-solid.vercel.app"
-                >
-                  Live Demo (SolidStart)
+                  GitHub
                 </a>
                 <Link
                   className={classnames(
                     "button button--primary button--lg rounded-pill",
                     styles.button
                   )}
-                  to={useBaseUrl("/getting-started/introduction")}
+                  to={useBaseUrl("/docs/")}
                 >
                   Get Started
                 </Link>
@@ -178,8 +160,8 @@ export default function Home() {
               <div className="row">
                 <div className="col">
                   <h2 className={styles.featuresTitle}>
-                    <span>Open Source.</span> <span>Full Stack.</span>{" "}
-                    <span>Own Your Data.</span>
+                    <span>Fast.</span> <span>Flexible.</span>{" "}
+                    <span>Front-Ended.</span>
                   </h2>
                 </div>
               </div>
@@ -196,10 +178,10 @@ export default function Home() {
                 <div className="col">
                   <p className="text--center">
                     <a
-                      href="https://www.npmjs.com/package/@auth/core"
+                      href="https://hub.docker.com/r/jinzhijie/skinrendermc-api"
                       className="button button--primary button--outline rounded-pill button--lg"
                     >
-                      npm install @auth/core
+                      docker pull jinzhijie/skinrendermc-api
                     </a>
                   </p>
                 </div>
@@ -207,7 +189,7 @@ export default function Home() {
               <div className="row">
                 <div className="col">
                   <h2 className="text--center" style={{ fontSize: "2.5rem" }}>
-                    Add authentication in minutes!
+                    Try out!
                   </h2>
                 </div>
               </div>
@@ -232,7 +214,7 @@ export default function Home() {
                     </CodeBlock>
                   </div>
                 </div>
-                <div className="col col--6">
+{/*                 <div className="col col--6">
                   <div className="code">
                     <div className="code-heading">
                       SolidStart <span>/routes/api/auth/[...solidauth].ts</span>
@@ -241,7 +223,7 @@ export default function Home() {
                       {solidStartCode}
                     </CodeBlock>
                   </div>
-                </div>
+                </div> */}
               </div>
               <div className="row">
                 <div className="col">
