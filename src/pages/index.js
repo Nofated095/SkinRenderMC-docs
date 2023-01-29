@@ -206,7 +206,7 @@ export default function Home() {
                 </div>
                 <div className="col col--6">
                   <div className="code">
-                    <img src="/assets/docusaurus.png" />
+                    <img src="/assets/yushijinhun_both.png" />
                   </div>
                 </div>
 {/*                 <div className="col col--6">
