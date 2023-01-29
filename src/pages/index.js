@@ -206,7 +206,7 @@ export default function Home() {
                 </div>
                 <div className="col col--6">
                   <div className="code">
-                    <img src="https://skinrendermc.9595095.xyz/assets/images/yushijinhun_both-a637b841102b85596974603032a76c1f.png" />
+                    <img src="/docs/assets/yushijinhun_both.png" />
                   </div>
                 </div>
 {/*                 <div className="col col--6">
