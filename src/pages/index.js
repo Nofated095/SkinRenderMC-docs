@@ -80,7 +80,7 @@ function Feature({ /* imageUrl,  */title, description }) {
       {imgUrl && (
         <div className="text--center">
           <div className="feature-image-wrapper">
-            <img className={styles.featureImage} src={imgUrl} alt={title} />
+            {/* <img className={styles.featureImage} src={imgUrl} alt={title} /> */}
           </div>
         </div>
       )}
